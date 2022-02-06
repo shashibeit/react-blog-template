@@ -1,0 +1,105 @@
+@import "../../index.scss";
+
+label.landing-title {
+  font-size: 61px !important;
+  color: $secondaryColor !important;
+  font-weight: 600 !important;
+}
+.learn-more-btn {
+  padding: 10px 25px 10px 25px !important;
+  font-size: 18px !important;
+}
+
+.learn-more-btn:hover {
+  background-color: transparent !important;
+  border-color: $btnPrimaryColor !important ;
+  color: $btnPrimaryColor !important;
+}
+.tech-link {
+  text-decoration: none;
+  color: $secondaryColor !important;
+}
+.tech-link:hover {
+  color: $secondaryColor !important;
+}
+
+.landing-typing-text {
+  width: 19ch;
+  animation: typing 5s steps(19), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+hr.rounded {
+  border-top: 3px solid $secondaryColor;
+  border-radius: 5px;
+}
+
+.social-links > li {
+  background-color: transparent !important;
+  color: $secondaryColor !important;
+  border: none;
+}
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 48px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: $linkColor !important;
+  cursor: pointer;
+}
+.social-link:hover {
+  color: $linkHoverColor !important;
+}
+.text-justify{
+  text-align: justify !important;
+}
+.card {
+  width: 18rem;
+  min-height: 400px;
+  max-height: 400px;
+}
+
+.card-title,
+.card-text {
+  text-align: left;
+}
+.card-text {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.recent-blog-card {
+  background: rgb(9, 15, 25) !important;
+  box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px, rgb(0 0 0 / 4%) 0px 10px 10px;
+  border: none !important;
+  border-radius: 10px !important;
+  color: $primaryColor;
+}
+.card-img-top {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  border: none;
+}
